@@ -675,8 +675,7 @@ a {
     background: #e2eddf;
 }
 
-.process-row:hover .process-row::after{
-
+.process-row:hover .process-row::after {
     display: hidden;
 }
 
@@ -696,7 +695,7 @@ a {
 }
 
 .process-row + .process-row {
-    padding-top: 81px;
+    padding-top: 57px;
 }
 
 .process-row__figure {
@@ -741,3 +740,106 @@ a {
 }
 
 /* Project */
+.project {
+    margin-top: 148px;
+    padding: 116px 130px 63px;
+    background-color: var(--primary-color);
+}
+
+.project__inner {
+    position: relative;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__heading {
+    color: #ffffff;
+}
+
+.project__heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 19px;
+    left: 300px;
+    width: 66px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+.project-row__desc {
+    margin-top: 20px;
+    width: 590px;
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #6a8383;
+}
+
+.project-cta {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.project-cta__desc {
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #ffffff;
+}
+
+.project-cta__arrow {
+    margin-left: 28px;
+}
+
+.project__image {
+    margin-top: 65px;
+    width: 1140px;
+    height: 544px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.project__image::after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: #ffffff;
+    border-radius: 1px;
+    transform: rotate(89.72deg);
+}
+
+.project__base {
+    position: absolute;
+    bottom: 205px;
+    left: 530px;
+    cursor: pointer;
+}
+
+.project__play {
+    position: absolute;
+    bottom: 250px;
+    left: 579px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.project__flower {
+    position: absolute;
+    right: -60px;
+    top:100px;
+    transform: rotate(30deg);
+}
+
+.project__line {
+    position: absolute;
+    right: -150px;
+    transform: rotate(90deg);
+}
