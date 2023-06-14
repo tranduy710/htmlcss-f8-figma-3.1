@@ -69,7 +69,7 @@ a {
     display: block;
     position: absolute;
     bottom: 19px;
-    left: 350px;
+    left: 410px;
     width: 66px;
     height: 2px;
     background: var(--primary-color);
@@ -219,11 +219,12 @@ a {
     height: 43px;
     border-radius: 50%;
     background: #83a17d;
+    cursor: pointer;
 }
 
 .header-hero__half-circle {
     position: absolute;
-    left: 203px;
+    left: 208px;
     width: 60px;
     height: 60px;
     border: 4px solid;
@@ -234,6 +235,7 @@ a {
     border-top-color: transparent;
     border-right-color: transparent;
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 .header-hero__desc-play {
@@ -952,8 +954,7 @@ a {
 .blog-item {
     margin-top: 90px;
     width: 360px;
-    transition: 0.30s;
-
+    transition: 0.3s;
 }
 
 .blog-item__img {
@@ -1023,4 +1024,122 @@ a {
     font-weight: 500;
     font-size: 1rem;
     color: #575d5e;
+}
+
+/* Footer */
+.footer {
+    margin-top: 102px;
+    padding: 72px 0 50px;
+    background: var(--primary-color);
+}
+
+.footer__inner {
+    padding-bottom: 45px;
+    position: relative;
+}
+
+.footer__inner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 1140px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #143c3c 2.28%,
+        #295a5a 55.65%,
+        rgba(38, 82, 82, 0) 102.06%
+    );
+    opacity: 0.4;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 261px;
+}
+
+.footer-news__heading {
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.footer__list-item {
+    display: flex;
+    column-gap: 50px;
+}
+
+.footer-form {
+    margin-top: 25px;
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.footer-form__input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #6a8383;
+    width: 315px;
+    height: 22px;
+}
+
+.footer-form__input::placeholder {
+    font-size: 14px;
+    line-height: 1.86;
+    /* color: white; */
+}
+
+.footer-form::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 354px;
+    height: 1px;
+    background: #6a8383;
+}
+
+.social-list {
+    margin-top: 47px;
+    display: flex;
+    column-gap: 22px;
+}
+
+.social-list__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 52px;
+    height: 52px;
+    border: 1px solid #265252;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.social-list__img:hover {
+    background: #a75325;
+}
+
+.footer__it a {
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    color: #6a8383;
+}
+
+.footer__it:hover a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer__it:first-child a {
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
 }
